@@ -48,16 +48,15 @@ def detik(keyword=None, n_berita=None):
                 req = requests.get(url_last_page[-1])  
                 page_source = req.content
             except IndexError as e:
-                print(e)
                 pakem = False
                 
         # export to csv
         keys = data_detik[0].keys()
-        with open('detik_%s_%s.csv' %(' '.join(keyword),n_berita), 'w', newline='')  as output_file:
+        with open('detik_%s_%s.csv' %(keyword,n_berita), 'w', newline='')  as output_file:
             dict_writer = csv.DictWriter(output_file, keys)
             dict_writer.writeheader()
             dict_writer.writerows(data_detik)
-            print('data save to detik_%s_%s.csv' %(' '.join(keyword),n_berita))
+            print('data save to detik_%s_%s.csv' %(keyword,n_berita))
 
     else:
          print('''
@@ -69,7 +68,7 @@ def detik(keyword=None, n_berita=None):
 try:
     KEYWORD = sys.argv[1:-1]
     N_BERITA = sys.argv[-1]
-    detik(keyword = KEYWORD, n_berita = N_BERITA)
+    detik(keyword = ' '.join(KEYWORD), n_berita = N_BERITA)
 except IndexError:
     print('''
     Masukan keyword dan jumlah berita yang ingin anda ambil
