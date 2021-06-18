@@ -1,13 +1,12 @@
 ## Nomenklatur Dataset ##
-judul           | judul berita
-berita          | isi berita
-url             | url berita
-tanggal         | tanggal terbit berita
 
-First Header  | Second Header
+
+1             | 2
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+judul         | judul berita
+berita        | isi berita
+url           | url berita
+tanggal       | tanggal terbit berita
 
 ## Setup detik_scraper.py ##
 - Buat virtual environement / python -m venv env
