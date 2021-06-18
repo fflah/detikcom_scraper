@@ -4,6 +4,11 @@ berita          | isi berita
 url             | url berita
 tanggal         | tanggal terbit berita
 
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
 ## Setup detik_scraper.py ##
 - Buat virtual environement / python -m venv env
 - Activate environment / source env/bin/activate (linux dan mac)
