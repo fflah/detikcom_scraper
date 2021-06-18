@@ -1,12 +1,12 @@
 ## Nomenklatur Dataset ##
-judul  | judul berita
-------------- | 
-berita  | isi berita
-------------- | 
-url  | url berita
-------------- | 
-tanggal  | tanggal terbit berita
-------------- | 
+judul           | judul berita
+-------------   | 
+berita          | isi berita
+-------------   | 
+url             | url berita
+-------------   | 
+tanggal         | tanggal terbit berita
+-------------   | 
 
 ## Setup detik_scraper.py ##
 - Buat virtual environement / python -m venv env
